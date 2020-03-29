@@ -40,10 +40,20 @@
 <?php wp_footer(); ?>
 
 
-
+<?php /* Only show Browser Sync on Local Install*/
+	$browserSync 			= 'http://silverfever.local';
+	$browserSyncHdrs 		= @get_headers($browserSync);
+	if($browserSyncHdrs):
+?>
+		
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
+<? endif; ?>
+
+
+
 
 </body>
 </html>
