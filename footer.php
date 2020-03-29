@@ -26,10 +26,7 @@
 			 */
 			do_action( 'storefront_footer' );
 			?>
-			<br>
 			<div class="copyright">&copy; <?=date("Y")?> Silver Fever, LLC <div class="ssl"><i class="fas fa-lock"></i> Secure SSL Encryption</div></div>
-			<br>
-
 		</div><!-- .col-full -->
 	</footer><!-- #colophon -->
 
@@ -41,6 +38,12 @@
 
 
 <?php wp_footer(); ?>
+
+
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 
 </body>
 </html>

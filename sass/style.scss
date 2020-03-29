@@ -1,0 +1,20 @@
+/*
+Theme Name: Storefront Child 
+Theme URI: 
+Description: Child theme of storefront theme for the Storefront theme
+Author: Misha Osinovskiy 
+Author URI: 
+Template: storefront
+Version: 2.3.5
+*/
+
+@import 'mixins';
+
+@import 'variables';
+@import 'base';
+@import 'legacy';
+
+@import 'touch-menu';
+@import 'hover-menu';
+
+@import 'footer';

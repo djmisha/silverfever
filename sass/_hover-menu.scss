@@ -1,0 +1,46 @@
+
+
+/*========================================
+=            Hover Navigation            =
+========================================*/
+
+.site-header {
+	border: none;
+}
+
+#menu-main-navigation {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	display: flex !important;
+	justify-content: space-around !important;
+	flex-wrap: wrap !important;
+}
+
+.storefront-primary-navigation {
+	li a {
+		padding: 10px 15px !important;
+		color: #000 !important;
+		// border-right: 2px solid #000;
+		// text-transform: uppercase;
+	}
+	.sub-menu {
+		// padding-top: 8px;
+		// padding-bottom: 8px;
+		width: 250px;
+		border-radius: 10px;
+		background: #000 !important;
+		overflow: hidden;
+		li a {
+			color: #fff !important;
+			width: 250px;
+			padding: 10px 15px !important;
+			font-size: 1em !important;
+		}
+		li a {
+
+			&:hover {
+				background: rgba(#fff, .1) !important;
+			}
+		}
+	}
+}

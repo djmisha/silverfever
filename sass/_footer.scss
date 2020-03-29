@@ -1,0 +1,133 @@
+
+/*==============================
+=            Footer            =
+==============================*/
+
+.site-footer {
+	background: #fff;
+	color: #000;
+
+
+	@include media($desktop) {
+		margin-left: 40px !important;
+		margin-right: 40px !important;
+		padding-bottom: 20px !important;
+	}
+}
+
+.site-info {
+	display:none;
+}
+
+.ssl {
+	color: #12bc00;
+	font-size: 16px;
+}
+
+.ssl {
+	display: inline-block;
+	color: #12bc00;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.footer-widgets {
+	// border-bottom: none !;
+	margin-bottom: 20px;
+}
+
+footer a {
+	text-decoration: underline !important;
+	color: #000 !important;
+
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+
+footer ul.menu li.current-menu-item > a,
+footer ul.menu li a {
+	color: #000 !important;
+	text-decoration: underline !important;
+}
+
+footer ul.menu li {
+	padding-left: 0 !important;
+}
+
+
+.widget-title {
+	font-size: 18px !important;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin-bottom: 20px !important;
+	padding: 0 !important;
+	border-bottom: 2px solid $black !important;
+	color: #000 !important;
+	padding-bottom: 10px !important;
+}
+
+
+/*Fix icon padding and hide them*/
+
+.widget_nav_menu ul li::before {
+	display: none
+}
+
+.widget_product_categories ul li::before {
+	display: none;
+}
+
+.widget_recent_entries ul li, .widget_pages ul li, .widget_categories ul li, .widget_archive ul li, .widget_recent_comments ul li, .widget_nav_menu ul li, .widget_links ul li, .widget_product_categories ul li, .widget_layered_nav ul li, .widget_layered_nav_filters ul li{
+	// padding-left: 0 !important;
+}
+
+
+/* Mail Chimp form */
+
+
+#mc-embedded-subscribe-form {
+	padding: 0;
+}
+
+#mc-embedded-subscribe-form input {
+	background: #fff !important;
+	border: 2px solid #000 !important;
+	color: #000 !important;
+	border-radius: 0px !important;
+	width: 100% !important;
+	margin: 0 !important;
+	margin-bottom: 10px !important;
+}
+
+#mc-embedded-subscribe-form form {
+	padding-top: 0 !important;
+}
+
+#mc-embedded-subscribe-form input.button{
+	width: 100% !important;
+	max-width: none;
+	font-weight: normal;
+}
+
+
+#wpstats {
+	display: none;
+}
+
+
+/* Infinite Scroll Transitions */
+
+
+// .products .product-type-simple {
+// 	transition: all .2s ease-in-out;
+// 	opacity: 1;
+// }
+// .products .product-type-simple img {
+// 	transition: all .2s ease-in-out;
+// 	opacity: 1;
+// }
