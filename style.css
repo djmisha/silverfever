@@ -492,7 +492,7 @@ body button.menu-toggle:before, body button.menu-toggle:after, body button.menu-
 }
 
 .storefront-primary-navigation .sub-menu li a:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
 }
 
 /*==============================
@@ -599,6 +599,10 @@ footer ul.menu li {
 
 #wpstats {
   display: none;
+}
+
+.storefront-handheld-footer-bar a {
+  text-decoration: none !important;
 }
 
 /* Infinite Scroll Transitions */

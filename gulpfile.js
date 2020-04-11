@@ -35,8 +35,8 @@ newer         = require('gulp-newer');
 
 /* src paths*/
 const _src_ = {
-    js : 'js/scrips.js',
-    sass : 'sass/**/*.scss'
+    js : 'js/*.js',
+    sass : 'sass/*.scss'
 };
 
 gulp.task('browser-sync', function() {
@@ -77,5 +77,5 @@ gulp.task('watch', ['browser-sync' ,'sass'], function () {
     gulp.watch(_src_.sass, ['sass']).on('change', function(event) {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
-    gulp.watch(_src_.js, ['jshint']);
+    // gulp.watch(_src_.js, ['jshint']);
 });
