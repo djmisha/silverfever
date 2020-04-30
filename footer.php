@@ -47,7 +47,7 @@
 			 */
 			do_action( 'storefront_footer' );
 			?>
-			<div class="copyright">&copy; <?=date("Y")?> Silver Fever, LLC <div class="ssl"><i class="fas fa-lock"></i> Secure SSL Encryption</div></div>
+			<div class="copyright">&copy; <?=date("Y")?> Silver Fever, LLC </div>
 		</div><!-- .col-full -->
 	</footer><!-- #colophon -->
 
