@@ -16,16 +16,16 @@
 
 	<div class="trust-badges">
 		<div class="trust-badge">
-			<img src="<?php bloginfo('url'); ?>/wp-content/themes/storefront-child-theme/images/icon-ship.svg" alt="ship">
+			<img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/storefront-child-theme/images/icon-ship.svg" alt="ship">
 			<p> <strong>30-Days No-Questions Return Policy:</strong><br /> If you are not completely satisfied with your purchase, you can claim 100% refund. Only shipping/delivery fees will be retain by us to cover up for the costs.
 			</p>
 		</div>
 		<div class="trust-badge">
-			<img src="<?php bloginfo('url'); ?>/wp-content/themes/storefront-child-theme/images/icon-return.svg" alt="return">
+			<img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/storefront-child-theme/images/icon-return.svg" alt="return">
 			<p> <strong>Irrefutable Exchange Policy:</strong><br /> We welcome exchanges - if you prefer an exchange, do choose another color / size/ item from our offers. </p>
 		</div>
 		<div class="trust-badge">
-			<img src="<?php bloginfo('url'); ?>/wp-content/themes/storefront-child-theme/images/icon-ssl.svg" alt="ssl">
+			<img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/storefront-child-theme/images/icon-ssl.svg" alt="ssl">
 			<p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. Shop safe with us. 
 			</p>
 		</div>
