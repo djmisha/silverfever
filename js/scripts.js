@@ -5,6 +5,20 @@ $(document).ready(function() {
 	
 	var badge = $('.trust-badges');
 	console.log(badge);
+	
+	
+// 	function calcSavings(){
+//   var startPrice = 30;
+//   var discountPrice = 25;
+  
+//   var savings = startPrice - discountPrice;  
+//   var priceElement = document.createElement('div');
+//   priceElement.classList.add('you-save');
+//   priceElement.innerHTML = 'You Save: ' + savings; 
+//   return priceElement;
+// }
+
+// calcSavings();
 
 
 	// function calcWidth() {
