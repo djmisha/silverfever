@@ -2,10 +2,12 @@
 
  
 $(document).ready(function() {
-	
+	var isProduct = $('body.product-template-default');
 	var badge = $('.trust-badges');
-	console.log(badge);
-	
+	var productMeta = $('.product_meta');
+	if(isProduct) {
+		$(productMeta).append(badge);
+	}
 	
 // 	function calcSavings(){
 //   var startPrice = 30;
