@@ -17,12 +17,12 @@ $url = get_stylesheet_directory_uri();
 	<div class="trust-badges">
 		<div class="trust-badge">
 			<img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship">
-			<p> <strong>30-Days No-Questions Return Policy:</strong><br /> If you are not completely satisfied with your purchase, you can claim 100% refund. Only shipping and delivery fees will be retained by us to cover those costs.
+			<p> <strong>30-Days No-Questions Return Policy:</strong><br /> If you are not completely satisfied with your purchase, you can claim a 100% refund. Only shipping and delivery costs will be retained.
 			</p>
 		</div>
 		<div class="trust-badge">
 			<img src="<?php echo $url ?>/images/icon-return.svg" alt="return">
-			<p> <strong>Irrefutable Exchange Policy:</strong><br /> We welcome exchanges - if you prefer an exchange, do choose another color/size/item from our offerings. </p>
+			<p> <strong>Irrefutable Exchange Policy:</strong><br /> We welcome exchanges, if you prefer an exchange, please choose another color/size/item from our offerings. </p>
 		</div>
 		<div class="trust-badge">
 			<img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl">
