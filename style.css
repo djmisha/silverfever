@@ -551,6 +551,11 @@ body button.menu-toggle:before, body button.menu-toggle:after, body button.menu-
   line-height: 16px;
 }
 
+.trust-badges.attached-to-prod img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
 .trust-badges img {
   clear: all;
   width: 60px;

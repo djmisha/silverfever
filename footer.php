@@ -7,25 +7,25 @@
  * @package storefront
  */
 
+$url = get_stylesheet_directory_uri();
+
 ?>
 
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
-
-
 	<div class="trust-badges">
 		<div class="trust-badge">
-			<img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/storefront-child-theme/images/icon-ship.svg" alt="ship">
+			<img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship">
 			<p> <strong>30-Days No-Questions Return Policy:</strong><br /> If you are not completely satisfied with your purchase, you can claim 100% refund. Only shipping and delivery fees will be retained by us to cover those costs.
 			</p>
 		</div>
 		<div class="trust-badge">
-			<img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/storefront-child-theme/images/icon-return.svg" alt="return">
+			<img src="<?php echo $url ?>/images/icon-return.svg" alt="return">
 			<p> <strong>Irrefutable Exchange Policy:</strong><br /> We welcome exchanges - if you prefer an exchange, do choose another color/size/item from our offerings. </p>
 		</div>
 		<div class="trust-badge">
-			<img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/storefront-child-theme/images/icon-ssl.svg" alt="ssl">
+			<img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl">
 			<p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. Shop safely with us. 
 			</p>
 		</div>
@@ -78,15 +78,11 @@
 	}
 </style>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="<?php echo $url ?>/js/scripts.js"></script>
 
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/storefront-child-theme/js/scripts.js"></script>
 
 <?php wp_footer(); ?>
-
 
 <?php /* Only show Browser Sync on Local Install*/
 	$browserSync 			= 'http://silverfever.local';

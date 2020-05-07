@@ -2,10 +2,12 @@
 
  
 $(document).ready(function() {
+
 	var isProduct = $('body.product-template-default');
 	var badge = $('.trust-badges');
 	var productMeta = $('.product_meta');
 	if(isProduct) {
+		$('.trust-badges').addClass('attached-to-prod');
 		$(productMeta).append(badge);
 	}
 	
