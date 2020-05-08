@@ -1,3 +1,9 @@
+/* Product Styles - Move to its owl file */
+
+.onsale.moved-sale {
+    float: right;
+}
+
 /*====================================
 =            Trust Badges            =
 ====================================*/
@@ -9,10 +15,10 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     @include media($tablet) {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
         padding-left: 20px;
@@ -21,21 +27,20 @@
     @include media($desktop) {
         justify-content: space-around;
     }
-
-    > div {
-        text-align: left;
+    .trust-badge {
         @include media($tablet) {
-            width: 30%;
-            max-width: 300px;
+            // max-width: 300px;
         }
+    }
+    .badge-image {
+        margin-bottom: 20px;
     }
     strong {
         color: #000;
     }
     img {
-        clear: all;
         width: 60px;
-        margin-bottom: 20px;
+        height: 60px;
     }
     &.attached-to-prod {
         margin-top: 20px;
@@ -50,6 +55,14 @@
         }
         img {
             width: 40px;
+        }
+        .badge-image {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            margin-bottom: 0;
+            float: left;
+            margin-bottom: 30px;
         }
     }
 }

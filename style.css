@@ -496,6 +496,11 @@ body button.menu-toggle span:before {
   background: rgba(255, 255, 255, 0.2) !important;
 }
 
+/* Product Styles - Move to its owl file */
+.onsale.moved-sale {
+  float: right;
+}
+
 /*====================================
 =            Trust Badges            =
 ====================================*/
@@ -506,15 +511,21 @@ body button.menu-toggle span:before {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
   .trust-badges {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -531,15 +542,8 @@ body button.menu-toggle span:before {
   }
 }
 
-.trust-badges > div {
-  text-align: left;
-}
-
-@media only screen and (min-width: 768px) {
-  .trust-badges > div {
-    width: 30%;
-    max-width: 300px;
-  }
+.trust-badges .badge-image {
+  margin-bottom: 20px;
 }
 
 .trust-badges strong {
@@ -547,9 +551,8 @@ body button.menu-toggle span:before {
 }
 
 .trust-badges img {
-  clear: all;
   width: 60px;
-  margin-bottom: 20px;
+  height: 60px;
 }
 
 .trust-badges.attached-to-prod {
@@ -569,6 +572,15 @@ body button.menu-toggle span:before {
 
 .trust-badges.attached-to-prod img {
   width: 40px;
+}
+
+.trust-badges.attached-to-prod .badge-image {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 0;
+  float: left;
+  margin-bottom: 30px;
 }
 
 .sku_wrapper,
