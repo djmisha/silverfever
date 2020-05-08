@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /* If Product Page, attach trust badget next to price */
 
-    var isProduct = $("body.product-template-default");
+    var isProduct = document.querySelector(".single-product");
     var badge = $(".trust-badges");
     var productMeta = $(".product_meta");
 
@@ -15,7 +15,8 @@ $(document).ready(function() {
 
 function calcSavings() {
     var theprice = document.querySelector(".single-product .price");
-    if (theprice) {
+    var onSale = document.querySelector(".onsale");
+    if (onSale) {
         var startPrice = document.querySelector(".price del");
         startPrice = startPrice.textContent.split("$")[1];
 
@@ -23,8 +24,9 @@ function calcSavings() {
         discountPrice = discountPrice.textContent.split("$")[1];
 
         var savings = startPrice - discountPrice;
-        var priceElement = document.createElement("div");
+        var savings = Math.floor(savings);
 
+        var priceElement = document.createElement("div");
         priceElement.classList.add("you-save");
         priceElement.innerHTML = "You Save $<span>" + savings + "</span>";
         theprice.append(priceElement);

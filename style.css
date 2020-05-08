@@ -40,7 +40,6 @@ hr {
     padding-bottom: 10px;
     margin-bottom: 10px !important;
     height: 55px !important;
-    border-bottom: 1px solid #eee;
   }
   #masthead .col-full {
     margin-left: 10px;
@@ -72,7 +71,8 @@ hr {
   footer {
     padding: 0 !important;
   }
-  footer .footer-widgets, footer .copyright {
+  footer .footer-widgets,
+  footer .copyright {
     display: none;
   }
   footer .storefront-handheld-footer-bar {
@@ -404,24 +404,25 @@ body button.menu-toggle {
   text-align: left;
   float: right;
   position: relative;
-  border: none !important;
+  border: 1px solid #000;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 2px;
   background-image: none;
-  font-size: 0.875em;
+  font-size: 14px;
   max-width: 120px;
   color: #000 !important;
   text-transform: uppercase;
 }
 
-body button.menu-toggle:before, body button.menu-toggle:after, body button.menu-toggle span:before {
+body button.menu-toggle:before, body button.menu-toggle:after,
+body button.menu-toggle span:before {
   background-color: #000;
   width: 20px;
 }
 
 .handheld-navigation {
-  border-radius: 8px;
+  border-radius: 6px;
   background: #000 !important;
 }
 
@@ -445,7 +446,7 @@ body button.menu-toggle:before, body button.menu-toggle:after, body button.menu-
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   line-height: inherit;
   vertical-align: baseline;
@@ -509,8 +510,8 @@ body button.menu-toggle:before, body button.menu-toggle:after, body button.menu-
 
 @media only screen and (min-width: 768px) {
   .trust-badges {
-    padding-bottom: 0px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -542,28 +543,32 @@ body button.menu-toggle:before, body button.menu-toggle:after, body button.menu-
 }
 
 .trust-badges strong {
-  font-size: 12px;
-  line-height: 14px;
   color: #000;
-}
-
-.trust-badges p {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.trust-badges.attached-to-prod img {
-  width: 40px;
-  margin-bottom: 10px;
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 40px;
 }
 
 .trust-badges img {
   clear: all;
   width: 60px;
   margin-bottom: 20px;
+}
+
+.trust-badges.attached-to-prod {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trust-badges.attached-to-prod strong {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.trust-badges.attached-to-prod p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.trust-badges.attached-to-prod img {
+  width: 40px;
 }
 
 .sku_wrapper,
