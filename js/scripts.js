@@ -44,9 +44,11 @@ $(document).ready(function() {
             prodSlide.prepend(prodTitle);
 
             var prodSale = get(".onsale");
-            prodSale.classList.add("moved-sale");
-            var prodPrice = get(".price");
-            prodPrice.prepend(prodSale);
+            if (prodSale) {
+                prodSale.classList.add("moved-sale");
+                var prodPrice = get(".price");
+                prodPrice.prepend(prodSale);
+            }
         }
     }
 });

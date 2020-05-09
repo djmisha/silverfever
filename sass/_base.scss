@@ -11,22 +11,39 @@ hr {
 }
 
 /* Masthead */
+
+.custom-logo-link {
+    width: 150px;
+    height: 40px;
+    position: relative;
+    img {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        background: url("images/logo.svg");
+        background-repeat: no-repeat;
+        background-size: 150px 40px;
+        width: 150px;
+        height: 100%;
+    }
+}
+
 /* Mobile Styles */
 
 @media screen and (max-width: 768px) {
     .site-branding {
-        // display: none;
         width: 120px;
-    }
-    .custom-logo-link {
     }
 
     #content .col-full {
         margin-left: 10px !important;
         margin-right: 10px !important;
-        // border: 1px solid pink;
     }
-    // .product-template-default {
+
     #masthead {
         background: transparent !important;
         margin: 0 !important;
@@ -34,24 +51,18 @@ hr {
         padding-top: 10px !important;
         padding-bottom: 10px;
         margin-bottom: 10px !important;
-        // border: 1px solid pink;
         height: 55px !important;
-        // border-bottom: 1px solid #eee;
-        // border-bottom: none !important;
+
         .col-full {
             margin-left: 10px;
             margin-right: 10px;
         }
     }
-    // }
 
     /* Hide Breadcrumb*/
     .product-template-default {
         .storefront-breadcrumb {
             display: none !important;
-            // margin: 0 !important;
-            // padding: 0 !important;
-            // border: 1px solid pink;
             @include media($tablet) {
                 display: block !important;
                 margin: 0 0 1.618em;
@@ -62,39 +73,13 @@ hr {
 
     .single-product div.product {
         width: 100%;
-        // border: 1px solid pink;
     }
+
     /* Hide Whole Sidebar */
     #secondary {
         display: none;
     }
-    /*Hide the footer stuff*/
-    footer {
-        padding: 0 !important;
-        .footer-widgets,
-        .copyright {
-            display: none;
-        }
-        .storefront-handheld-footer-bar {
-            box-shadow: none !important;
-            li a {
-                // border: 1px solid pink;
-                color: #fff !important;
-                background: #000 !important;
-                text-indent: 5px !important;
-                border-right: 1px solid rgba(#fff, 0.2) !important;
-                padding-top: 32px;
-                font-size: 12px;
 
-                &:before {
-                    font-size: 28px;
-                }
-            }
-            .footer-cart-contents {
-                // font-size: 20px;
-            }
-        }
-    }
     .add_to_cart_button {
         border: 2px solid $black !important;
         background: none;
@@ -103,6 +88,21 @@ hr {
     }
     .woocommerce-product-gallery {
         margin-bottom: 20px !important;
-        // border: 1px solid pink;
     }
+}
+
+.button {
+    border: 1px solid black;
+}
+
+// fields
+input.input-text {
+    border: 1px solid rgb(186, 186, 186);
+}
+
+/* Card CC bug */
+
+#payment .payment_methods > .woocommerce-PaymentMethod > label,
+#payment .payment_methods > .wc_payment_method > label {
+    display: flex;
 }
