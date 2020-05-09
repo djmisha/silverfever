@@ -198,8 +198,9 @@ footer {
     .storefront-handheld-footer-bar {
         box-shadow: none !important;
         z-index: 1998 !important;
-        left: 92px !important;
-        z-index: 1000 !important;
+        // left: 92px !important;
+        padding-left: 100px;
+        z-index: 1 !important;
         // border: 1px solid pink;
         a {
             text-decoration: none !important;
@@ -220,4 +221,8 @@ footer {
             // font-size: 20px;
         }
     }
+}
+
+.storefront-handheld-footer-bar ul li.search .site-search {
+    bottom: -4em;
 }

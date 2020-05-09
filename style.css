@@ -16,6 +16,10 @@ body {
   background: none;
 }
 
+body p {
+  color: #000;
+}
+
 hr {
   background-color: #000 !important;
   margin-top: 40px;
@@ -102,6 +106,9 @@ hr {
 
 .button {
   border: 1px solid black;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
 }
 
 input.input-text {
@@ -231,11 +238,9 @@ input.input-text {
         flex-wrap: wrap;
   }
   .site-main ul.products.columns-3 li.product {
-    width: 45%;
+    width: 48%;
   }
   .site-main ul.products.columns-3 li.product h2 {
-    font-size: 12px;
-    line-height: 16px;
     font-weight: bold;
   }
   .site-main ul.products.columns-3 li.product .button {
@@ -445,10 +450,11 @@ body button.menu-toggle span:before {
 .handheld-navigation {
   z-index: 9999 !important;
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 54px;
+  bottom: 50px;
   border-radius: 0px !important;
   background: #000 !important;
 }
@@ -781,8 +787,8 @@ footer .storefront-handheld-footer-bar {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   z-index: 1998 !important;
-  left: 92px !important;
-  z-index: 1000 !important;
+  padding-left: 100px;
+  z-index: 1 !important;
 }
 
 footer .storefront-handheld-footer-bar a {
@@ -799,4 +805,8 @@ footer .storefront-handheld-footer-bar li a {
 
 footer .storefront-handheld-footer-bar li a:before {
   font-size: 22px;
+}
+
+.storefront-handheld-footer-bar ul li.search .site-search {
+  bottom: -4em;
 }

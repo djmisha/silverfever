@@ -26,12 +26,12 @@ body button.menu-toggle {
 
 .handheld-navigation {
     z-index: 9999 !important;
-
     position: fixed;
+    overflow: scroll;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 54px;
+    bottom: 50px;
     border-radius: 0px !important;
     background: #000 !important;
     // padding: 10px;
