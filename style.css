@@ -807,6 +807,7 @@ footer .storefront-handheld-footer-bar li a:before {
   font-size: 22px;
 }
 
+/* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
-  bottom: -4em;
+  bottom: -5em;
 }
