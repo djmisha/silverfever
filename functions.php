@@ -11,7 +11,7 @@ function child_theme_enqueue_styles() {
     $parent_base_dir = 'storefront';
 
     wp_enqueue_style( $parent_style,
-        get_template_directory_uri() . '/style.css',
+        get_template_directory_uri() . '/style.css?v=420',
         array(),
         wp_get_theme( $parent_base_dir ) ? wp_get_theme( $parent_base_dir )->get('Version') : ''
     );
@@ -51,7 +51,7 @@ add_action('wp_head', 'hook_analytics');
 function hook_infinite_scroll() {
     ?>
     
-    <script async src="https://silverfever.com/wordpress/wp-content/themes/storefront-child-theme/scripts/infinite-scroll.pkgd.min.js"></script>
+    <!-- <script async src="https://silverfever.com/wordpress/wp-content/themes/storefront-child-theme/scripts/infinite-scroll.pkgd.min.js"></script> -->
 
     <script>
     //  (function($) {
