@@ -109,13 +109,6 @@ input.input-text {
 }
 
 /* Card CC bug */
-#payment .payment_methods > .woocommerce-PaymentMethod > label,
-#payment .payment_methods > .wc_payment_method > label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .site-info {
   display: none;
 }
