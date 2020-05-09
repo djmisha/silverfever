@@ -43,9 +43,10 @@
         height: 60px;
     }
     &.attached-to-prod {
+        flex-direction: column;
         margin-top: 20px;
-        padding-bottom: 20px;
         strong {
+            // display: block;
             font-size: 12px;
             line-height: 14px;
         }
@@ -54,6 +55,7 @@
             line-height: 16px;
         }
         img {
+            // margin-top: 5px;
             width: 40px;
         }
         .badge-image {

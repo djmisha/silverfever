@@ -14,6 +14,7 @@ $url = get_stylesheet_directory_uri();
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
+	<?php if(is_product()): ?>
 	<div class="trust-badges">
 		<div class="trust-badge">
 			<div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
@@ -27,7 +28,7 @@ $url = get_stylesheet_directory_uri();
 			<div> <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. Shop safely with us. </p> </div>
 		</div>
 	</div>
-
+	<?php endif; ?>
 
 
 	<?php do_action( 'storefront_before_footer' ); ?>

@@ -1,18 +1,21 @@
-/* Helper Function */
+/* Javascript Helper Function */
 
-/* Get Elements on Page */
-function get(element) {
-    element = document.querySelector(element);
-    return element;
+/* Select an Element in the DOM */
+function get(selector) {
+    return document.querySelector(selector);
 }
 
-/* Create a Div with classes and content */
-// function create(element, cssclass, content) {
-//     element = document.createElement("div");
-//     element.classList.add(cssclass);
-//     element.innerHTML = content;
-//     return element;
-// }
+/* Create Marup for an element with classes and content */
+function createMarkUp(elementType, classList, content) {
+    element = document.createElement(elementType);
+    if (classList.length > 0) {
+        element.classList = classList.join(" ");
+    }
+    if (content) {
+        element.innerHTML = content;
+    }
+    return element;
+}
 
 $(document).ready(function() {
     /* run Product page Functions */
@@ -20,6 +23,7 @@ $(document).ready(function() {
     if (isProduct) {
         moveElements();
         trustBadges();
+        calcSavings();
     }
 
     /* If Product Page, attach trust badget next to price */
@@ -35,6 +39,7 @@ $(document).ready(function() {
         width = $(window).width();
         if (width < 768) {
             var prodTitle = get(".product_title");
+            prodTitle.classList.add("product-moved-title");
             var prodSlide = get(".woocommerce-notices-wrapper");
             prodSlide.prepend(prodTitle);
 
@@ -49,23 +54,19 @@ $(document).ready(function() {
 /* Calculate Savings */
 
 function calcSavings() {
-    var theprice = get(".single-product .price");
     var onSale = get(".single-product .onsale");
     if (onSale) {
+        var theprice = get(".single-product .price");
         var startPrice = get(".price del");
         startPrice = startPrice.textContent.split("$")[1];
 
         var discountPrice = get(".price ins");
         discountPrice = discountPrice.textContent.split("$")[1];
 
-        var savings = startPrice - discountPrice;
-        var savings = Math.floor(savings);
+        var savings = Math.floor(startPrice - discountPrice);
+        saveContent = "You Save $<span>" + savings + "</span>";
 
-        var priceElement = document.createElement("div");
-        priceElement.classList.add("you-save");
-        priceElement.innerHTML = "You Save $<span>" + savings + "</span>";
+        priceElement = createMarkUp("div", ["you-save"], saveContent);
         theprice.append(priceElement);
     }
 }
-
-calcSavings();

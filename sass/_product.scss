@@ -1,0 +1,32 @@
+.single-product {
+    .price del {
+        font-size: 18px;
+        color: #ababab;
+    }
+    .price ins {
+        color: rgb(11, 182, 11);
+        font-weight: bold;
+    }
+    .you-save {
+        font-size: 16px;
+        line-height: 15px;
+        color: #bfbebe;
+        span {
+            font-size: 18px;
+        }
+    }
+    .onsale {
+        background: rgb(254, 206, 117);
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    select {
+        padding: 5px 10px 5px 10px;
+        border: 1px solid #000;
+    }
+    .product-moved-title {
+        margin-top: 10px;
+    }
+}

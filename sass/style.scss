@@ -8,13 +8,14 @@ Template: storefront
 Version: 2.3.5
 */
 
-@import 'mixins';
+@import "mixins";
 
-@import 'variables';
-@import 'base';
-@import 'legacy';
+@import "variables";
+@import "base";
+@import "legacy";
 
-@import 'touch-menu';
-@import 'hover-menu';
+@import "touch-menu";
+@import "hover-menu";
 
-@import 'footer';
+@import "product";
+@import "footer";

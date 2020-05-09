@@ -496,6 +496,43 @@ body button.menu-toggle span:before {
   background: rgba(255, 255, 255, 0.2) !important;
 }
 
+.single-product .price del {
+  font-size: 18px;
+  color: #ababab;
+}
+
+.single-product .price ins {
+  color: #0bb60b;
+  font-weight: bold;
+}
+
+.single-product .you-save {
+  font-size: 16px;
+  line-height: 15px;
+  color: #bfbebe;
+}
+
+.single-product .you-save span {
+  font-size: 18px;
+}
+
+.single-product .onsale {
+  background: #fece75;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.single-product select {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #000;
+}
+
+.single-product .product-moved-title {
+  margin-top: 10px;
+}
+
 /* Product Styles - Move to its owl file */
 .onsale.moved-sale {
   float: right;
@@ -556,8 +593,11 @@ body button.menu-toggle span:before {
 }
 
 .trust-badges.attached-to-prod {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 20px;
-  padding-bottom: 20px;
 }
 
 .trust-badges.attached-to-prod strong {
