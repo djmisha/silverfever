@@ -11,13 +11,13 @@ function child_theme_enqueue_styles() {
     $parent_base_dir = 'storefront';
 
     wp_enqueue_style( $parent_style,
-        get_template_directory_uri() . '/style.css?v=420',
+        get_template_directory_uri() . '/style.css',
         array(),
         wp_get_theme( $parent_base_dir ) ? wp_get_theme( $parent_base_dir )->get('Version') : ''
     );
 
     wp_enqueue_style( $parent_style . '_child_style',
-        get_stylesheet_directory_uri() . '/style.css',
+        get_stylesheet_directory_uri() . '/style.css?v=420',
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
