@@ -507,7 +507,6 @@ body button.menu-toggle span:before {
 
 .storefront-primary-navigation .sub-menu {
   width: 250px;
-  border-radius: 10px;
   background: #000 !important;
   overflow: hidden;
 }
