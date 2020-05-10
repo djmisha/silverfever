@@ -188,7 +188,7 @@ footer {
     .copyright {
         display: none;
         @include media($tablet) {
-            display: "block";
+            display: block;
         }
     }
 

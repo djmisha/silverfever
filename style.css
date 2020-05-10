@@ -798,7 +798,7 @@ footer .copyright {
 @media only screen and (min-width: 768px) {
   footer .footer-widgets,
   footer .copyright {
-    display: "block";
+    display: block;
   }
 }
 
