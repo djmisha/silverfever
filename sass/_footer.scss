@@ -1,9 +1,3 @@
-/* Product Styles - Move to its owl file */
-
-.onsale.moved-sale {
-    float: right;
-}
-
 /*====================================
 =            Trust Badges            =
 ====================================*/
@@ -112,7 +106,6 @@
 }
 
 .footer-widgets {
-    // border-bottom: none !;
     margin-bottom: 20px;
 }
 
@@ -196,6 +189,7 @@ footer {
         display: none;
     }
     .storefront-handheld-footer-bar {
+        border-top: 1px solid #eee;
         box-shadow: none !important;
         z-index: 1998 !important;
         padding-left: 100px;
@@ -219,5 +213,5 @@ footer {
 
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
-    bottom: -5em;
+    bottom: 100px;
 }

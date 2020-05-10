@@ -185,6 +185,14 @@ input.input-text {
   margin-right: 20px;
 }
 
+.page-template-template-homepage .page {
+  padding-top: 0;
+}
+
+.page-template-template-homepage .page .entry-content {
+  padding-top: 0;
+}
+
 .home .entry-content {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -784,6 +792,7 @@ footer .copyright {
 }
 
 footer .storefront-handheld-footer-bar {
+  border-top: 1px solid #eee;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   z-index: 1998 !important;
@@ -809,5 +818,5 @@ footer .storefront-handheld-footer-bar li a:before {
 
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
-  bottom: -5em;
+  bottom: 100px;
 }
