@@ -94,12 +94,12 @@ function disable_emojis_and_scrips() {
   /*CONTROLL HOMEPAGE SECTIONS*/
 
   // remove_action( 'homepage', 'storefront_homepage_content', 10 );
-  remove_action( 'homepage', 'storefront_product_categories', 20 );
-  remove_action( 'homepage', 'storefront_recent_products', 30 );
-  remove_action( 'homepage', 'storefront_featured_products', 40 );
-  remove_action( 'homepage', 'storefront_popular_products', 50 );
-  remove_action( 'homepage', 'storefront_on_sale_products', 60 );
-  remove_action( 'homepage', 'storefront_best_selling_products', 70 );
+  // remove_action( 'homepage', 'storefront_product_categories', 20 );
+  // remove_action( 'homepage', 'storefront_recent_products', 30 );
+  // remove_action( 'homepage', 'storefront_featured_products', 40 );
+//   remove_action( 'homepage', 'storefront_popular_products', 50 );
+//   remove_action( 'homepage', 'storefront_on_sale_products', 60 );
+  // remove_action( 'homepage', 'storefront_best_selling_products', 70 );
 
 }
 
