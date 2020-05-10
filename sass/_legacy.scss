@@ -76,8 +76,12 @@ body,
     padding-top: 0;
     .entry-content {
         padding-top: 0;
+        @include media($tablet) {
+            padding-top: 60px;
+        }
     }
 }
+
 .home .entry-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
