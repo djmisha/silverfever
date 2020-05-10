@@ -790,6 +790,18 @@ footer {
   padding: 0 !important;
 }
 
+footer .footer-widgets,
+footer .copyright {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .footer-widgets,
+  footer .copyright {
+    display: "block";
+  }
+}
+
 footer .storefront-handheld-footer-bar {
   border-top: 1px solid #eee;
   -webkit-box-shadow: none !important;

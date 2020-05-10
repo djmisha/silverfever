@@ -14,15 +14,16 @@ $url = get_stylesheet_directory_uri();
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
-	<?php if(is_product() || is_front_page() || is_archive()): ?>
+	<!-- if(is_product() || is_front_page() || is_archive()):  -->
+	<?php if(is_product()): ?>
 	<div class="trust-badges">
 		<div class="trust-badge">
 			<div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
-			<div> <p> <strong>30-Days No-Questions Return Policy:</strong><br /> If you are not completely satisfied with your purchase, you can claim a 100% refund. Only shipping and delivery costs will be retained. </p> </div>
+			<div> <p> <strong>30-Days No-Questions Return Policy</strong><br /> If you are not completely satisfied with your purchase, you can claim a 100% refund. Only shipping and delivery costs will be retained. </p> </div>
 		</div>
 		<div class="trust-badge">
 			<div class="badge-image"> <img src="<?php echo $url ?>/images/icon-return.svg" alt="return"> </div>
-			<div> <p> <strong>Irrefutable Exchange Policy:</strong><br /> We welcome exchanges, if you prefer an exchange, please choose another color/size/item from our offerings. </p> </div> </div>
+			<div> <p> <strong>Irrefutable Exchange Policy</strong><br /> We welcome exchanges, if you prefer an exchange, please choose another color/size/item from our offerings. </p> </div> </div>
 		<div class="trust-badge">
 			<div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl"> </div>
 			<div> <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. Shop safely with us. </p> </div>
