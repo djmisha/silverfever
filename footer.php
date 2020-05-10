@@ -14,7 +14,7 @@ $url = get_stylesheet_directory_uri();
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
-	<?php if(is_product()): ?>
+	<?php if(is_product() || is_front_page() || is_archive()): ?>
 	<div class="trust-badges">
 		<div class="trust-badge">
 			<div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
