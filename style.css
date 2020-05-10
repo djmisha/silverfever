@@ -786,11 +786,6 @@ footer {
   padding: 0 !important;
 }
 
-footer .footer-widgets,
-footer .copyright {
-  display: none;
-}
-
 footer .storefront-handheld-footer-bar {
   border-top: 1px solid #eee;
   -webkit-box-shadow: none !important;

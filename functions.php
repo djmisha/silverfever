@@ -17,7 +17,7 @@ function child_theme_enqueue_styles() {
     );
 
     wp_enqueue_style( $parent_style . '_child_style',
-        get_stylesheet_directory_uri() . '/style.css?v=424',
+        get_stylesheet_directory_uri() . '/style.css?v=425',
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
@@ -88,20 +88,18 @@ function disable_emojis_and_scrips() {
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 	
 	wp_deregister_script( 'wp-embed' ); // Disable wp-embed.js   
-  remove_action( 'homepage', 'storefront_featured_products', 40 );
-  
-
-  wp_deregister_script( 'wp-embed' ); // Disable wp-embed.js   
+    remove_action( 'homepage', 'storefront_featured_products', 40 );
+    wp_deregister_script( 'wp-embed' ); // Disable wp-embed.js   
 
   /*CONTROLL HOMEPAGE SECTIONS*/
 
   // remove_action( 'homepage', 'storefront_homepage_content', 10 );
-  // remove_action( 'homepage', 'storefront_product_categories', 20 );
-  // remove_action( 'homepage', 'storefront_recent_products', 30 );
-  // remove_action( 'homepage', 'storefront_featured_products', 40 );
+  remove_action( 'homepage', 'storefront_product_categories', 20 );
+  remove_action( 'homepage', 'storefront_recent_products', 30 );
+  remove_action( 'homepage', 'storefront_featured_products', 40 );
   remove_action( 'homepage', 'storefront_popular_products', 50 );
   remove_action( 'homepage', 'storefront_on_sale_products', 60 );
-  // remove_action( 'homepage', 'storefront_best_selling_products', 70 );
+  remove_action( 'homepage', 'storefront_best_selling_products', 70 );
 
 }
 
