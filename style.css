@@ -818,5 +818,5 @@ footer .storefront-handheld-footer-bar li a:before {
 
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
-  bottom: 100px;
+  bottom: -100px;
 }
