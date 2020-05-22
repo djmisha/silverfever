@@ -833,6 +833,40 @@ footer .storefront-handheld-footer-bar li a:before {
   font-size: 22px;
 }
 
+/* Register New Customer */
+.register-for-discount {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  display: block;
+  min-height: 240px;
+}
+
+@media only screen and (min-width: 768px) {
+  .register-for-discount {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.register-for-discount .u-column1.col-1 {
+  display: none;
+}
+
+.register-for-discount .u-column2.col-2 {
+  float: none !important;
+  width: 100% !important;
+}
+
+.register-for-discount .u-column2.col-2 form p:nth-of-type(2) {
+  display: none;
+}
+
+.register-for-discount h2:after {
+  content: " and Save 10% on Your First Order";
+}
+
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
   bottom: -100px;
