@@ -30,16 +30,19 @@ add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 
 function hook_analytics() {
     ?>
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5551508-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5551508-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-5551508-1');
-    </script>
-    <?php
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'UA-5551508-1');
+</script>
+<?php
 }
 
 add_action('wp_head', 'hook_analytics');
@@ -50,11 +53,11 @@ add_action('wp_head', 'hook_analytics');
 
 function hook_infinite_scroll() {
     ?>
-    
-    <!-- <script async src="https://silverfever.com/wordpress/wp-content/themes/storefront-child-theme/scripts/infinite-scroll.pkgd.min.js"></script> -->
 
-    <script>
-    //  (function($) {
+<!-- <script async src="https://silverfever.com/wordpress/wp-content/themes/storefront-child-theme/scripts/infinite-scroll.pkgd.min.js"></script> -->
+
+<script>
+//  (function($) {
 //        $(function() {//
 
 //          $('.archive .products').infiniteScroll({
@@ -65,9 +68,9 @@ function hook_infinite_scroll() {
 
 //        }); 
 //      })(jQuery);
-    </script>
-  
-    <?php
+</script>
+
+<?php
 }
 
 add_action('wp_footer', 'hook_infinite_scroll');
@@ -79,13 +82,13 @@ add_action('wp_footer', 'hook_infinite_scroll');
 ==========================================================*/
 
 function disable_emojis_and_scrips() {
-	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-	remove_action( 'wp_print_styles', 'print_emoji_styles' );
-	remove_action( 'admin_print_styles', 'print_emoji_styles' ); 
-	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' ); 
-	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+	// remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	// remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	// remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	// remove_action( 'admin_print_styles', 'print_emoji_styles' ); 
+	// remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	// remove_filter( 'comment_text_rss', 'wp_staticize_emoji' ); 
+	// remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 	
 	wp_deregister_script( 'wp-embed' ); // Disable wp-embed.js   
     remove_action( 'homepage', 'storefront_featured_products', 40 );
@@ -180,5 +183,3 @@ if ( ! function_exists( 'storefront_product_categories' ) ) {
         }
     }
 }
-
-
