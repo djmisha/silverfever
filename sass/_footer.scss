@@ -243,6 +243,11 @@ footer {
             content: " and Save 10% on Your First Order";
         }
     }
+    .woocommerce-account &,
+    .woocommerce-checkout &,
+    .woocommerce-cart & {
+        display: none;
+    }
 }
 
 /* Hide Search Bar lower */

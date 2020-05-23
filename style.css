@@ -867,6 +867,12 @@ footer .storefront-handheld-footer-bar li a:before {
   content: " and Save 10% on Your First Order";
 }
 
+.woocommerce-account .register-for-discount,
+.woocommerce-checkout .register-for-discount,
+.woocommerce-cart .register-for-discount {
+  display: none;
+}
+
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
   bottom: -100px;
