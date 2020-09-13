@@ -877,6 +877,19 @@ footer .storefront-handheld-footer-bar li a:before {
   display: none;
 }
 
+/* Checkout Questions */
+.order-questions {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  display: none;
+}
+
+.woocommerce-checkout .order-questions,
+.woocommerce-cart .order-questions {
+  display: block;
+}
+
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
   bottom: -100px;

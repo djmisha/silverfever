@@ -250,6 +250,18 @@ footer {
     }
 }
 
+/* Checkout Questions */
+.order-questions {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    display: none;
+    .woocommerce-checkout &,
+    .woocommerce-cart & {
+        display: block;
+    }
+}
+
 /* Hide Search Bar lower */
 .storefront-handheld-footer-bar ul li.search .site-search {
     bottom: -100px;

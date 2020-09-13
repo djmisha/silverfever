@@ -54,17 +54,13 @@ $url = get_stylesheet_directory_uri();
 <?php do_action('storefront_before_footer'); ?>
 
 
-
 <div class="order-questions"> 
     <p>
-        Questions abour your oder? <br> Contact Liliya  
-        <a href="teal+1(858) 922-7535">(858) 922-7535 </a>
-        <a href="mailto:info@silverfever.com">info@silverfever.com</a>
+        Questions? Contact Liliya   <br> 
+       text/call <a href="teal+1(858) 922-7535">(858) 922-7535 </a>
+       email <a href="mailto:info@silverfever.com">info@silverfever.com</a>
     </p>
 </div>
-
-
-
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="col-full">
