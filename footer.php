@@ -15,7 +15,7 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #content -->
 
 <!-- if(is_product() || is_front_page() || is_archive()):  -->
-<?php if(is_product()): ?>
+<?php if (is_product()): ?>
 <div class="trust-badges">
     <div class="trust-badge">
         <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
@@ -40,31 +40,49 @@ $url = get_stylesheet_directory_uri();
 </div>
 <?php endif; ?>
 
-<?php if (!is_user_logged_in())  { ?>
+
+
+
+
+<?php if (!is_user_logged_in()) { ?>
 <div class="register-for-discount">
     <?php echo do_shortcode('[woocommerce_my_account]'); ?>
+    <p>Discount cupon code will be send to your email address.</p>
 </div>
 <?php } ?>
 
-<?php do_action( 'storefront_before_footer' ); ?>
+<?php do_action('storefront_before_footer'); ?>
+
+
+
+<div class="order-questions"> 
+    <p>
+        Questions abour your oder? <br> Contact Liliya  
+        <a href="teal+1(858) 922-7535">(858) 922-7535 </a>
+        <a href="mailto:info@silverfever.com">info@silverfever.com</a>
+    </p>
+</div>
+
+
+
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="col-full">
 
         <?php
-			/**
-			 * Functions hooked in to storefront_footer action
-			 *
-			 * @hooked storefront_footer_widgets - 10
-			 * @hooked storefront_credit         - 20
-			 */
-			do_action( 'storefront_footer' );
-			?>
+            /**
+             * Functions hooked in to storefront_footer action
+             *
+             * @hooked storefront_footer_widgets - 10
+             * @hooked storefront_credit         - 20
+             */
+            do_action('storefront_footer');
+            ?>
         <div class="copyright">&copy; <?=date("Y")?> Silver Fever, LLC </div>
     </div><!-- .col-full -->
 </footer><!-- #colophon -->
 
-<?php do_action( 'storefront_after_footer' ); ?>
+<?php do_action('storefront_after_footer'); ?>
 
 
 </div><!-- #page -->
@@ -101,9 +119,9 @@ li.hidden {
 <?php wp_footer(); ?>
 
 <?php /* Only show Browser Sync on Local Install*/
-	$browserSync 			= 'http://silverfever.local';
-	$browserSyncHdrs 		= @get_headers($browserSync);
-	if($browserSyncHdrs):
+    $browserSync 			= 'http://silverfever.local';
+    $browserSyncHdrs 		= @get_headers($browserSync);
+    if ($browserSyncHdrs):
 ?>
 
 <script id="__bs_script__">
@@ -113,7 +131,7 @@ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-cl
 //]]>
 </script>
 
-<? endif; ?>
+<?php endif; ?>
 
 
 

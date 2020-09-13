@@ -11,6 +11,10 @@ Version: 2.3.5
 =            Variables             =
 ==================================*/
 /* Media Query Breakpoints */
+.box {
+  border: 1px solid pink;
+}
+
 /* Base Styles */
 body {
   background: none;
@@ -864,7 +868,7 @@ footer .storefront-handheld-footer-bar li a:before {
 }
 
 .register-for-discount h2:after {
-  content: " and Save 10% on Your First Order";
+  content: " and Save 15% on Your First Order";
 }
 
 .woocommerce-account .register-for-discount,

@@ -1,3 +1,9 @@
+.box {
+    border: 1px solid pink;
+    @include media($tablet) {
+    }
+}
+
 /* Base Styles */
 
 body {
