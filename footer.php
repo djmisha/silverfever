@@ -47,7 +47,7 @@ $url = get_stylesheet_directory_uri();
 <?php if (!is_user_logged_in()) { ?>
 <div class="register-for-discount">
     <?php echo do_shortcode('[woocommerce_my_account]'); ?>
-    <p>Discount cupon code will be send to your email address.</p>
+    <p>Discount coupon code will be send to your email address.</p>
 </div>
 <?php } ?>
 
