@@ -31,7 +31,7 @@ $(document).ready(function() {
         var badge = $(".trust-badges");
         var productMeta = $(".product_meta");
         $(".trust-badges").addClass("attached-to-prod");
-        $(productMeta).append(badge);
+        // $(productMeta).append(badge);
     }
 
     /* Move Single Product Elements around for Mobile */

@@ -11,19 +11,21 @@
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
     @include media($tablet) {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 80px;
     }
     @include media($desktop) {
         justify-content: space-around;
     }
     .trust-badge {
         @include media($tablet) {
-            // max-width: 300px;
+            max-width: 320px;
         }
     }
     .badge-image {
@@ -37,16 +39,24 @@
         height: 60px;
     }
     &.attached-to-prod {
-        flex-direction: column;
+        // flex-direction: column;
         margin-top: 20px;
         strong {
             // display: block;
             font-size: 12px;
             line-height: 14px;
+            @include media($tablet) {
+                font-size: 15px;
+                line-height: 18px;
+            }
         }
         p {
             font-size: 12px;
             line-height: 16px;
+            @include media($tablet) {
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
         img {
             // margin-top: 5px;

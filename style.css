@@ -611,6 +611,7 @@ body button.menu-toggle span:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -625,6 +626,7 @@ body button.menu-toggle span:before {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 80px;
   }
 }
 
@@ -632,6 +634,12 @@ body button.menu-toggle span:before {
   .trust-badges {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trust-badges .trust-badge {
+    max-width: 320px;
   }
 }
 
@@ -649,10 +657,6 @@ body button.menu-toggle span:before {
 }
 
 .trust-badges.attached-to-prod {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 20px;
 }
 
@@ -661,9 +665,23 @@ body button.menu-toggle span:before {
   line-height: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+  .trust-badges.attached-to-prod strong {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
 .trust-badges.attached-to-prod p {
   font-size: 12px;
   line-height: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .trust-badges.attached-to-prod p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .trust-badges.attached-to-prod img {
