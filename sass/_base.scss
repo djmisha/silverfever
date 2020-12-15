@@ -118,3 +118,15 @@ input.input-text {
 #payment .payment_methods > .wc_payment_method > label {
     // display: flex;
 }
+
+
+// Single Product Template 
+
+.product-template-default.single-product {
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        display: none;
+    }
+}

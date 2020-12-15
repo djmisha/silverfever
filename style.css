@@ -120,6 +120,14 @@ input.input-text {
 }
 
 /* Card CC bug */
+.product-template-default.single-product #primary {
+  width: 100%;
+}
+
+.product-template-default.single-product #secondary {
+  display: none;
+}
+
 .site-info {
   display: none;
 }
