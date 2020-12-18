@@ -85,30 +85,18 @@ $url = get_stylesheet_directory_uri();
 
 
 <style>
-li.hidden {
-    display: none;
-}
-
-/*.menu li a {
-	  display: block;
-	  padding: 1em 0.5em;
-	}
-	*/
-
-@media screen and (min-width: 48.25em) {
-    body:after {
-        content: 'large';
+    li.hidden {
         display: none;
     }
-
-    #toggler {
-        /*display: none;*/
+    @media screen and (min-width: 48.25em) {
+        body:after {
+            content: 'large';
+            display: none;
+        }
     }
-}
 </style>
 
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="<?php echo $url ?>/js/scripts.js"></script>
 
 
