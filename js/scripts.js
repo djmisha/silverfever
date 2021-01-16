@@ -24,7 +24,7 @@ $(document).ready(function() {
         moveElements();
         trustBadges();
         calcSavings();
-        attachTextToRegisterCTA();
+        // attachTextToRegisterCTA();
     }
 
     /* If Product Page, attach trust badget next to price */
