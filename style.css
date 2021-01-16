@@ -728,6 +728,11 @@ body button.menu-toggle span:before {
   margin-bottom: 20px;
 }
 
+.discount-text {
+  display: block;
+  font-size: 12px;
+}
+
 /*==============================
 =            Footer            =
 ==============================*/

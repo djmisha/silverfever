@@ -24,6 +24,7 @@ $(document).ready(function() {
         moveElements();
         trustBadges();
         calcSavings();
+        attachTextToRegisterCTA();
     }
 
     /* If Product Page, attach trust badget next to price */
@@ -70,5 +71,17 @@ function calcSavings() {
 
         priceElement = createMarkUp("div", ["you-save"], saveContent);
         theprice.append(priceElement);
+    }
+}
+
+/* attachTextToRegisterCTA  */
+
+function attachTextToRegisterCTA() {
+    var theTextToAttach = document.querySelector(".discount-text");
+    if (theTextToAttach) {
+        var attachElement = document.querySelector(
+            ".woocommerce-notices-wrapper .u-column2.col-2 h2"
+        );
+        attachElement.appendChild(theTextToAttach);
     }
 }
