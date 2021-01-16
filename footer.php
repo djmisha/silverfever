@@ -17,6 +17,7 @@ $url = get_stylesheet_directory_uri();
 <!-- if(is_product() || is_front_page() || is_archive()):  -->
 <?php if (is_product()): ?>
 <div class="trust-badges">
+    <span class="trust-title">Safe Shopping, Secure Payments</span>
     <div class="trust-badge">
         <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
         <div>
@@ -34,7 +35,7 @@ $url = get_stylesheet_directory_uri();
     <div class="trust-badge">
         <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl"> </div>
         <div>
-            <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. Shop safely with us. </p>
+            <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. You can shop safely with us. </p>
         </div>
     </div>
 </div>
@@ -47,7 +48,7 @@ $url = get_stylesheet_directory_uri();
 <?php if (!is_user_logged_in()) { ?>
 <div class="register-for-discount">
     <?php echo do_shortcode('[woocommerce_my_account]'); ?>
-    <p>Discount coupon code will be send to your email address.</p>
+    <p class="discount-text">Discount coupon code will be send to your email address.</p>
 </div>
 <?php } ?>
 
@@ -56,8 +57,8 @@ $url = get_stylesheet_directory_uri();
 
 <div class="order-questions"> 
     <p>
-        Questions? Contact Liliya   <br> 
-       text/call <a href="teal+1(858) 922-7535">(858) 922-7535 </a>
+       Questions about your order? Contact Liliya   <br> 
+       Text or Call <a href="tel+1(858) 922-7535">(858) 922-7535 </a>
        email <a href="mailto:info@silverfever.com">info@silverfever.com</a>
     </p>
 </div>
