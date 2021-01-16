@@ -16,8 +16,8 @@ $url = get_stylesheet_directory_uri();
 
 <!-- if(is_product() || is_front_page() || is_archive()):  -->
 <?php if (is_product()): ?>
+<span class="trust-title">Safe Shopping, Secure Payments</span>
 <div class="trust-badges">
-    <span class="trust-title">Safe Shopping, Secure Payments</span>
     <div class="trust-badge">
         <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
         <div>

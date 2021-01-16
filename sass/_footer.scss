@@ -97,8 +97,8 @@
     color: #000;
 
     @include media($desktop) {
-        margin-left: 40px !important;
-        margin-right: 40px !important;
+        // margin-left: 40px !important;
+        // margin-right: 40px !important;
         padding-bottom: 20px !important;
     }
 }
@@ -262,6 +262,9 @@ footer {
     .woocommerce-checkout &,
     .woocommerce-cart & {
         display: none;
+    }
+    .woocommerce-Input.woocommerce-Input--text.input-text {
+        max-width: 510px;
     }
 }
 

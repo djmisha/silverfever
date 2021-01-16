@@ -731,8 +731,6 @@ body button.menu-toggle span:before {
 
 @media only screen and (min-width: 1080px) {
   .site-footer {
-    margin-left: 40px !important;
-    margin-right: 40px !important;
     padding-bottom: 20px !important;
   }
 }
@@ -907,6 +905,10 @@ footer .storefront-handheld-footer-bar li a:before {
 .woocommerce-checkout .register-for-discount,
 .woocommerce-cart .register-for-discount {
   display: none;
+}
+
+.register-for-discount .woocommerce-Input.woocommerce-Input--text.input-text {
+  max-width: 510px;
 }
 
 /* Checkout Questions */
