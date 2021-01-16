@@ -602,9 +602,22 @@ body button.menu-toggle span:before {
   float: right;
 }
 
+.footer-widget-4 .widget ul ul {
+  margin-left: 1.618em;
+  margin-left: 0;
+  margin-top: 20px;
+}
+
 /*====================================
 =            Trust Badges            =
 ====================================*/
+.trust-title {
+  display: block;
+  font-style: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
 .trust-badges {
   margin-top: 20px;
   background: rgba(238, 238, 238, 0.5);
@@ -643,12 +656,6 @@ body button.menu-toggle span:before {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-}
-
-.trust-badges .trust-title {
-  display: block;
-  font-style: 20px;
-  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) {

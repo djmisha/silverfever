@@ -1,6 +1,21 @@
+// 4th nav
+
+.footer-widget-4 .widget ul ul {
+    margin-left: 1.618em;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
 /*====================================
 =            Trust Badges            =
 ====================================*/
+
+.trust-title {
+    display: block;
+    font-style: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
 
 .trust-badges {
     margin-top: 20px;
@@ -23,11 +38,7 @@
     @include media($desktop) {
         justify-content: space-around;
     }
-    .trust-title {
-        display: block;
-        font-style: 20px;
-        margin-bottom: 10px;
-    }
+
     .trust-badge {
         @include media($tablet) {
             max-width: 320px;
@@ -95,7 +106,6 @@
 .site-footer {
     background: #fff;
     color: #000;
-
     @include media($desktop) {
         // margin-left: 40px !important;
         // margin-right: 40px !important;

@@ -42,9 +42,6 @@ $url = get_stylesheet_directory_uri();
 <?php endif; ?>
 
 
-
-
-
 <?php if (!is_user_logged_in()) { ?>
 <div class="register-for-discount">
     <?php echo do_shortcode('[woocommerce_my_account]'); ?>
@@ -81,9 +78,7 @@ $url = get_stylesheet_directory_uri();
 
 <?php do_action('storefront_after_footer'); ?>
 
-
 </div><!-- #page -->
-
 
 <style>
     li.hidden {
@@ -117,9 +112,6 @@ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-cl
 </script>
 
 <?php endif; ?>
-
-
-
 
 </body>
 
