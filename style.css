@@ -645,6 +645,12 @@ body button.menu-toggle span:before {
   }
 }
 
+.trust-badges .trust-title {
+  display: block;
+  font-style: 20px;
+  margin-bottom: 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .trust-badges .trust-badge {
     max-width: 320px;

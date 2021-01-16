@@ -23,6 +23,11 @@
     @include media($desktop) {
         justify-content: space-around;
     }
+    .trust-title {
+        display: block;
+        font-style: 20px;
+        margin-bottom: 10px;
+    }
     .trust-badge {
         @include media($tablet) {
             max-width: 320px;
