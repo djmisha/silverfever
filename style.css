@@ -112,6 +112,12 @@ hr {
   color: #000;
   font-size: 16px;
   border-radius: 5px;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+}
+
+.button:hover {
+  background-color: #e7e7e7;
 }
 
 input.input-text {
@@ -132,10 +138,18 @@ input.input-text {
   padding-top: 20px;
 }
 
-input#woocommerce-product-search-field-0 {
+input#woocommerce-product-search-field-0,
+input#woocommerce-product-search-field-1 {
   border-radius: 10px;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+/*  Fix layout shift  */
+@media only screen and (min-width: 768px) {
+  .woocommerce-product-gallery {
+    min-height: 630px;
+  }
 }
 
 .site-info {
@@ -322,6 +336,12 @@ input#woocommerce-product-search-field-0 {
   .nav__dropdown-toggle {
     padding-left: 10px;
     padding-right: 10px;
+    background-color: white;
+    border-top: 3px dotted #e7e7e7;
+    border-bottom: 3px dotted #e7e7e7;
+  }
+  .nav__dropdown-toggle:hover {
+    background-color: #e7e7e7;
   }
   .nav__dropdown.priority-nav__dropdown.show {
     margin-left: -20px;
@@ -576,8 +596,7 @@ body button.menu-toggle span:before {
   .storefront-primary-navigation .sub-menu li a:hover {
     background: rgba(231, 231, 231, 0.5) !important;
   }
-  .widget.woocommerce.widget_shopping_cart.sub-menu--is-touch-device,
-  .secondary-navigation .sub-menu.sub-menu--is-touch-device {
+  .secondary-navigation .sub-menu {
     border-radius: 10px;
     background: white !important;
     border: 1px solid #e7e7e7;
@@ -3091,12 +3110,9 @@ body.modal-open .mm-slideout {
   margin-top: 20px;
 }
 
-/*====================================
-=            Trust Badges            =
-====================================*/
 .trust-title {
   display: block;
-  font-style: 20px;
+  font-size: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
 }
@@ -3249,6 +3265,7 @@ body.modal-open .mm-slideout {
 
 .footer-widgets {
   margin-bottom: 20px;
+  border-bottom: 3px dotted #e7e7e7 !important;
 }
 
 footer a {

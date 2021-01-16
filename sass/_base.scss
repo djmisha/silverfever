@@ -105,6 +105,10 @@ hr {
     color: #000;
     font-size: 16px;
     border-radius: 5px;
+    transition: background-color 0.1s ease-in;
+    &:hover {
+        background-color: #e7e7e7;
+    }
 }
 
 // fields
@@ -135,7 +139,16 @@ input.input-text {
     padding-top: 20px;
 }
 
-input#woocommerce-product-search-field-0 {
+input#woocommerce-product-search-field-0,
+input#woocommerce-product-search-field-1 {
     border-radius: 10px;
     box-shadow: none !important;
+}
+
+/*  Fix layout shift  */
+
+@include media($tablet) {
+    .woocommerce-product-gallery {
+        min-height: 630px;
+    }
 }
