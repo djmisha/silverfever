@@ -41,7 +41,6 @@ $url = get_stylesheet_directory_uri();
 </div>
 <?php endif; ?>
 
-
 <?php if (!is_user_logged_in()) { ?>
 <div class="register-for-discount">
     <?php echo do_shortcode('[woocommerce_my_account]'); ?>
@@ -51,10 +50,9 @@ $url = get_stylesheet_directory_uri();
 
 <?php do_action('storefront_before_footer'); ?>
 
-
 <div class="order-questions"> 
     <p>
-       Questions about your order? Contact Liliya   <br> 
+       Questions about your order? Contact Liliya <br> 
        Text or Call <a href="tel+1(858) 922-7535">(858) 922-7535 </a>
        email <a href="mailto:info@silverfever.com">info@silverfever.com</a>
     </p>
