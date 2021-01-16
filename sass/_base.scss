@@ -90,7 +90,7 @@ hr {
     }
 
     .add_to_cart_button {
-        border: 1px solid $black !important;
+        // border: 1px solid $black !important;
         background: none;
         text-transform: uppercase;
         font-size: 14px;
@@ -101,10 +101,11 @@ hr {
 }
 
 .button {
-    border: 1px solid black;
-    text-transform: uppercase;
+    border: 1px solid #ccc;
+    // text-transform: uppercase;
     color: #000;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 // fields
@@ -119,8 +120,7 @@ input.input-text {
     // display: flex;
 }
 
-
-// Single Product Template 
+// Single Product Template
 
 .product-template-default.single-product {
     #primary {
@@ -129,4 +129,14 @@ input.input-text {
     #secondary {
         display: none;
     }
+}
+
+/* Header */
+.site-header {
+    padding-top: 20px;
+}
+
+input#woocommerce-product-search-field-0 {
+    border-radius: 10px;
+    box-shadow: none !important;
 }

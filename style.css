@@ -98,7 +98,6 @@ hr {
     display: none;
   }
   .add_to_cart_button {
-    border: 1px solid #000 !important;
     background: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -109,10 +108,10 @@ hr {
 }
 
 .button {
-  border: 1px solid black;
-  text-transform: uppercase;
+  border: 1px solid #ccc;
   color: #000;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 input.input-text {
@@ -126,6 +125,17 @@ input.input-text {
 
 .product-template-default.single-product #secondary {
   display: none;
+}
+
+/* Header */
+.site-header {
+  padding-top: 20px;
+}
+
+input#woocommerce-product-search-field-0 {
+  border-radius: 10px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .site-info {
@@ -306,8 +316,20 @@ input.input-text {
 
 /* Navigation */
 @media screen and (min-width: 768px) {
+  .storefront-primary-navigation .col-full {
+    padding-right: 0;
+  }
+  .nav__dropdown-toggle {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav__dropdown.priority-nav__dropdown.show {
+    margin-left: -20px;
+    background-color: white;
+    position: relative;
+  }
   .woocommerce-active .site-header .main-navigation {
-    padding-top: 16px;
+    padding-top: 0px;
   }
   .main-navigation ul.menu > li.menu-item-has-children > a::after,
   .main-navigation ul.menu > li.page_item_has_children > a::after,
@@ -378,13 +400,13 @@ ul.products li,
 .woocommerce-active .site-header .site-search {
   float: none;
   position: absolute;
-  left: 38%;
+  left: 28%;
 }
 
 .woocommerce-active .site-header .site-header-cart {
   position: absolute;
   right: 40px;
-  top: 50px;
+  top: 30px;
   float: none;
 }
 
@@ -525,15 +547,9 @@ body button.menu-toggle span:before {
 }
 
 #menu-main-navigation {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex-pack: distribute !important;
-      justify-content: space-around !important;
-  -ms-flex-wrap: wrap !important;
-      flex-wrap: wrap !important;
+  border-top: 3px dotted #e7e7e7;
+  border-bottom: 3px dotted #e7e7e7;
+  display: inline-block;
 }
 
 .storefront-primary-navigation li a {
@@ -542,20 +558,78 @@ body button.menu-toggle span:before {
 }
 
 .storefront-primary-navigation .sub-menu {
-  width: 250px;
-  background: #000 !important;
+  border-radius: 10px;
+  background: white !important;
   overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.16);
 }
 
 .storefront-primary-navigation .sub-menu li a {
-  color: #fff !important;
+  color: black !important;
   width: 250px;
   padding: 10px 15px !important;
   font-size: 1em !important;
+  line-height: 1em;
 }
 
 .storefront-primary-navigation .sub-menu li a:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(231, 231, 231, 0.5) !important;
+}
+
+/*
+ * Core styles for PriorityNav.js
+ * These styles are not optional and should always be included
+ *
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+.priority-nav {
+  white-space: nowrap;
+  /*
+      * Makes sure the menu's are inline-block so they don't take up
+      * the entire width of its parent. This will break the plugin.
+      */
+}
+
+.priority-nav > ul {
+  display: inline-block;
+}
+
+.priority-nav > ul > li {
+  display: inline-block;
+}
+
+.priority-nav-has-dropdown .priority-nav__dropdown-toggle {
+  position: relative;
+}
+
+.priority-nav__wrapper {
+  position: relative;
+}
+
+.priority-nav__dropdown {
+  position: absolute;
+  visibility: hidden;
+}
+
+.priority-nav__dropdown.show {
+  visibility: visible;
+}
+
+.priority-nav__dropdown-toggle {
+  visibility: hidden;
+  position: absolute;
+}
+
+.priority-nav-is-visible {
+  visibility: visible;
+}
+
+.priority-nav-is-hidden {
+  visibility: hidden;
 }
 
 .single-product .price del {
@@ -794,7 +868,7 @@ footer ul.menu li {
   text-transform: uppercase;
   margin-bottom: 20px !important;
   padding: 0 !important;
-  border-bottom: 2px solid #000 !important;
+  border-bottom: 3px dotted #e7e7e7 !important;
   color: #000 !important;
   padding-bottom: 10px !important;
 }

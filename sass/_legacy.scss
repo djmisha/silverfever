@@ -174,8 +174,20 @@ body,
 /* Navigation */
 
 @media screen and (min-width: 768px) {
+    .storefront-primary-navigation .col-full {
+        padding-right: 0;
+    }
+    .nav__dropdown-toggle {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav__dropdown.priority-nav__dropdown.show {
+        margin-left: -20px;
+        background-color: white;
+        position: relative;
+    }
     .woocommerce-active .site-header .main-navigation {
-        padding-top: 16px;
+        padding-top: 0px;
     }
     .main-navigation ul.menu > li.menu-item-has-children > a::after,
     .main-navigation ul.menu > li.page_item_has_children > a::after,
@@ -243,13 +255,13 @@ ul.products li,
 .woocommerce-active .site-header .site-search {
     float: none;
     position: absolute;
-    left: 38%;
+    left: 28%;
 }
 
 .woocommerce-active .site-header .site-header-cart {
     position: absolute;
     right: 40px;
-    top: 50px;
+    top: 30px;
     float: none;
 }
 

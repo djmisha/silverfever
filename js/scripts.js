@@ -1,3 +1,27 @@
+/* Priority Navigation */
+
+/**
+ * Initiate priorityNav
+ */
+
+var nav = priorityNav.init({
+    mainNavWrapper: ".primary-navigation", // mainnav wrapper selector (must be direct parent from mainNav)
+    mainNav: "#menu-main-navigation", // mainnav selector. (must be inline-block)
+    navDropdownLabel: "&darr;",
+    navDropdownClassName: "nav__dropdown", // class used for the dropdown.
+    navDropdownToggleClassName: "nav__dropdown-toggle", // class used for the dropdown toggle.
+});
+
+// var nav2 = priorityNav.init({
+//     mainNavWrapper: ".topnav-wrapper", // mainnav wrapper selector (must be direct parent from mainNav)
+//     mainNav: ".nav-ul", // mainnav selector. (must be inline-block)
+//     navDropdownLabel: "test2",
+//     navDropdownClassName: "nav__dropdown", // class used for the dropdown.
+//     navDropdownToggleClassName: "nav__dropdown-toggle", // class used for the dropdown toggle.
+// });
+
+console.log(nav);
+
 /* Javascript Helper Function */
 
 /* Select an Element in the DOM */

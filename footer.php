@@ -14,6 +14,28 @@ $url = get_stylesheet_directory_uri();
 </div><!-- .col-full -->
 </div><!-- #content -->
 
+<!-- 
+<nav class="nav">
+        <div class="wrapper resize-drag topnav-wrapper">
+            <ul class="nav-ul">
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li> <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li> <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+                <li><a href="#">menu item</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+
 <!-- if(is_product() || is_front_page() || is_archive()):  -->
 <?php if (is_product()): ?>
 <span class="trust-title">Safe Shopping, Secure Payments</span>
@@ -91,6 +113,9 @@ $url = get_stylesheet_directory_uri();
 </style>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script src="<?php echo $url ?>/js/priority-nav.js"></script>
+
 <script src="<?php echo $url ?>/js/scripts.js"></script>
 
 

@@ -112,8 +112,6 @@
     background: #fff;
     color: #000;
     @include media($desktop) {
-        // margin-left: 40px !important;
-        // margin-right: 40px !important;
         padding-bottom: 20px !important;
     }
 }
@@ -165,7 +163,7 @@ footer ul.menu li {
     text-transform: uppercase;
     margin-bottom: 20px !important;
     padding: 0 !important;
-    border-bottom: 2px solid $black !important;
+    border-bottom: 3px dotted #e7e7e7 !important;
     color: #000 !important;
     padding-bottom: 10px !important;
 }

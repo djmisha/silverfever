@@ -11,37 +11,86 @@
 }
 
 #menu-main-navigation {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    display: flex !important;
-    justify-content: space-around !important;
-    flex-wrap: wrap !important;
+    border-top: 3px dotted #e7e7e7;
+    border-bottom: 3px dotted #e7e7e7;
+    display: inline-block;
 }
 
 .storefront-primary-navigation {
     li a {
         padding: 10px 15px !important;
         color: #000 !important;
-        // border-right: 2px solid #000;
-        // text-transform: uppercase;
     }
     .sub-menu {
-        // padding-top: 8px;
-        // padding-bottom: 8px;
-        width: 250px;
-        // border-radius: 10px;
-        background: #000 !important;
+        border-radius: 10px;
+        background: white !important;
         overflow: hidden;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 3px 0px 30px rgba($color: #000000, $alpha: 0.16);
         li a {
-            color: #fff !important;
+            color: black !important;
             width: 250px;
             padding: 10px 15px !important;
             font-size: 1em !important;
+            line-height: 1em;
         }
         li a {
             &:hover {
-                background: rgba(#fff, 0.2) !important;
+                background: rgba(#e7e7e7, 0.5) !important;
             }
         }
+    }
+}
+
+/*
+ * Core styles for PriorityNav.js
+ * These styles are not optional and should always be included
+ *
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+
+.priority-nav {
+    white-space: nowrap; // prevent flash of unstyled content
+
+    /*
+      * Makes sure the menu's are inline-block so they don't take up
+      * the entire width of its parent. This will break the plugin.
+      */
+    > ul {
+        display: inline-block;
+        > li {
+            display: inline-block;
+        }
+    }
+    &-has-dropdown {
+        .priority-nav {
+            &__dropdown {
+                &-toggle {
+                    position: relative;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__dropdown {
+        position: absolute;
+        visibility: hidden;
+        &.show {
+            visibility: visible;
+        }
+        &-toggle {
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+    &-is-visible {
+        visibility: visible;
+    }
+    &-is-hidden {
+        visibility: hidden;
     }
 }
