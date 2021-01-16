@@ -14,27 +14,7 @@ $url = get_stylesheet_directory_uri();
 </div><!-- .col-full -->
 </div><!-- #content -->
 
-<!-- 
-<nav class="nav">
-        <div class="wrapper resize-drag topnav-wrapper">
-            <ul class="nav-ul">
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li> <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li> <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-                <li><a href="#">menu item</a></li>
-            </ul>
-        </div>
-    </nav> -->
-
+ 
 
 <!-- if(is_product() || is_front_page() || is_archive()):  -->
 <?php if (is_product()): ?>
@@ -80,6 +60,9 @@ $url = get_stylesheet_directory_uri();
     </p>
 </div>
 
+
+
+
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="col-full">
 
@@ -100,6 +83,12 @@ $url = get_stylesheet_directory_uri();
 
 </div><!-- #page -->
 
+
+<!-- 
+<div class="m-menu-trigger">
+    <a href=".product-categories">Menu</a>
+</div> -->
+
 <style>
     li.hidden {
         display: none;
@@ -115,11 +104,22 @@ $url = get_stylesheet_directory_uri();
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
 <script src="<?php echo $url ?>/js/priority-nav.js"></script>
-
 <script src="<?php echo $url ?>/js/scripts.js"></script>
 
 
+<!-- mmenu scripts -->
+
+<!-- <script src="<?php echo $url ?>/js/mmenu.polyfills.js"></script>
+<script src="<?php echo $url ?>/js/mmenu.js"></script> -->
+
+<!-- <script>
+     new Mmenu(document.querySelector('.product-categories'));
+</script> -->
+
+
+
 <?php wp_footer(); ?>
+
 
 <?php /* Only show Browser Sync on Local Install*/
     $browserSync 			= 'http://silverfever.local';
