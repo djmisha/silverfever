@@ -1,9 +1,5 @@
 /* Priority Navigation */
 
-/**
- * Initiate priorityNav
- */
-
 var nav = priorityNav.init({
     mainNavWrapper: ".primary-navigation", // mainnav wrapper selector (must be direct parent from mainNav)
     mainNav: "#menu-main-navigation", // mainnav selector. (must be inline-block)

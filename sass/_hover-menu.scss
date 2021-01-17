@@ -2,9 +2,7 @@
     width: 140px;
 }
 
-/*========================================
-=            Hover Navigation            =
-========================================*/
+// Navigation
 
 .site-header {
     border: none;
@@ -18,7 +16,6 @@
 
 @include media($tablet) {
     .storefront-primary-navigation {
-        overflow: hidden;
         li a {
             padding: 10px 15px !important;
             color: #000 !important;
