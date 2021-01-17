@@ -84,13 +84,13 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #page -->
 
 
-<!-- 
-<div class="m-menu-trigger">
-    <a href=".product-categories">Menu</a>
+<!-- <div class="cats-menu-trigger">
+    <a id="my-button">Menu</a>
 </div> -->
 
+
 <style>
-    li.hidden {
+    /* li.hidden {
         display: none;
     }
     @media screen and (min-width: 48.25em) {
@@ -98,25 +98,41 @@ $url = get_stylesheet_directory_uri();
             content: 'large';
             display: none;
         }
-    }
+    } */
 </style>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
 <script src="<?php echo $url ?>/js/priority-nav.js"></script>
 <script src="<?php echo $url ?>/js/scripts.js"></script>
 
-
 <!-- mmenu scripts -->
 
-<!-- <script src="<?php echo $url ?>/js/mmenu.polyfills.js"></script>
-<script src="<?php echo $url ?>/js/mmenu.js"></script> -->
+<!-- <link rel="stylesheet" href="<?php echo $url ?>/js/mmenu.css">
+<script src="<?php echo $url ?>/js/mmenu.polyfills.js"></script>
+<script src="<?php echo $url ?>/js/mmenu.js"></script>  
 
-<!-- <script>
-     new Mmenu(document.querySelector('.product-categories'));
-</script> -->
+<script>
+    var catsMenu = document.querySelector("#woocommerce_product_categories-4");
 
+    if (catsMenu) {
+        catsMenu.firstChild.remove();
+    }
 
+    var theMenu = new Mmenu(catsMenu.firstElementChild, {
+        "extensions": [
+            // "pagedim-black",
+            "theme-dark"
+        ],
+        "counters": true
+    });
+
+    /* Button Trigger */
+    $("#my-button").click(function() {
+        theMenu.open();
+      });
+    
+</script>
+-->
 
 <?php wp_footer(); ?>
 
