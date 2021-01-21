@@ -84,6 +84,7 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #page -->
 
 
+<!-- 
     <div class="splide">
 	<div class="splide__track">
 		<ul class="splide__list">
@@ -102,6 +103,7 @@ $url = get_stylesheet_directory_uri();
 		</ul>
 	</div>
 </div>
+ -->
 
 
 
@@ -125,9 +127,8 @@ $url = get_stylesheet_directory_uri();
     <link rel="stylesheet" href="<?php echo $url ?>/js/splide/css/splide.min.css">
     <script src="<?php echo $url ?>/js/splide/js/splide.min.js"></script>
     <script>
-
         new Splide( '.splide', {
-            type  : 'loop',
+            type  : 'fade',
             rewind: true,
             lazyLoad: 'nearby',
             autoplay: true,
@@ -154,10 +155,9 @@ $url = get_stylesheet_directory_uri();
 ?>
 
 <script id="__bs_script__">
-//<![CDATA[
-document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace(
-    "HOST", location.hostname));
-//]]>
+    //<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+    //]]>
 </script>
 
 <?php endif; ?>
