@@ -108,7 +108,7 @@ function disable_emojis_and_scrips()
     remove_action('homepage', 'storefront_featured_products', 40);
     remove_action('homepage', 'storefront_popular_products', 50);
     remove_action('homepage', 'storefront_on_sale_products', 60);
-    //   remove_action( 'homepage', 'storefront_best_selling_products', 70 );
+    remove_action('homepage', 'storefront_best_selling_products', 70);
 }
 
 add_action('init', 'disable_emojis_and_scrips');
