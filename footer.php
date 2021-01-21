@@ -84,7 +84,7 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #page -->
 
 
-<!-- <div class="splide">
+    <div class="splide">
 	<div class="splide__track">
 		<ul class="splide__list">
 			<li class="splide__slide">
@@ -101,8 +101,7 @@ $url = get_stylesheet_directory_uri();
 			</li>
 		</ul>
 	</div>
-</div> -->
-
+</div>
 
 
 
@@ -120,20 +119,28 @@ $url = get_stylesheet_directory_uri();
     } */
 </style>
 
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="<?php echo $url ?>/js/priority-nav.js"></script>
-<script src="<?php echo $url ?>/js/scripts.js"></script>
-
-
 <!-- slideshow scripts -->
 
 <?php if (is_front_page()): ?>
     <link rel="stylesheet" href="<?php echo $url ?>/js/splide/css/splide.min.css">
     <script src="<?php echo $url ?>/js/splide/js/splide.min.js"></script>
     <script>
-        new Splide('.splide').mount();
+
+        new Splide( '.splide', {
+            type  : 'loop',
+            rewind: true,
+            lazyLoad: 'nearby',
+            autoplay: true,
+        } ).mount();
     </script>
 <?php endif; ?>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="<?php echo $url ?>/js/priority-nav.js"></script>
+<script src="<?php echo $url ?>/js/scripts.js"></script>
+
+
 
 
 
