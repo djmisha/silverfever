@@ -31,13 +31,19 @@ $url = get_stylesheet_directory_uri();
         <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-return.svg" alt="return"> </div>
         <div>
             <p> <strong>Easy Exchange Policy</strong><br /> We welcome exchanges, if you prefer an exchange,
-                please choose another color/size/item from our offerings. </p>
+                please feel free to choose another color, size or item from our offerings. </p>
         </div>
     </div>
     <div class="trust-badge">
         <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl"> </div>
         <div>
-            <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. You can shop safely with us. </p>
+            <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. You can shop safe and secure with us. </p>
+        </div>
+    </div>
+    <div class="trust-badge">
+        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl"> </div>
+        <div>
+            <p> <strong>Family Owned & Opperated</strong> <br />Silver Fever is a family owned and opperated business from San Diego, California </p>
         </div>
     </div>
 </div>
@@ -57,6 +63,7 @@ $url = get_stylesheet_directory_uri();
        Questions about your order? Contact Liliya <br> 
        Text or Call <a href="tel+1(858) 922-7535">(858) 922-7535 </a>
        email <a href="mailto:info@silverfever.com">info@silverfever.com</a>
+       <br />
     </p>
 </div>
 
@@ -75,7 +82,7 @@ $url = get_stylesheet_directory_uri();
              */
             do_action('storefront_footer');
             ?>
-        <div class="copyright">&copy; <?=date("Y")?> Silver Fever, LLC </div>
+        <div class="copyright">&copy; 2002 - <?=date("Y")?> Silver Fever, LLC </div>
     </div><!-- .col-full -->
 </footer><!-- #colophon -->
 
