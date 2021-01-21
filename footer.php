@@ -84,9 +84,28 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #page -->
 
 
-<!-- <div class="cats-menu-trigger">
-    <a id="my-button">Menu</a>
+<!-- <div class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="https://silverfever.com/wordpress/wp-content/uploads/2021/01/slide-4.jpg" alt="slide-homepage" />
+			</li>
+			<li class="splide__slide">
+				<img src="https://silverfever.com/wordpress/wp-content/uploads/2021/01/slide-2.jpg" alt="slide-homepage" />
+			</li>
+			<li class="splide__slide">
+				<img src="https://silverfever.com/wordpress/wp-content/uploads/2021/01/slide-3.jpg" alt="slide-homepage" />
+			</li>
+            <li class="splide__slide">
+				<img src="https://silverfever.com/wordpress/wp-content/uploads/2021/01/slide-1.jpg" alt="slide-homepage" />
+			</li>
+		</ul>
+	</div>
 </div> -->
+
+
+
+
 
 
 <style>
@@ -105,34 +124,18 @@ $url = get_stylesheet_directory_uri();
 <script src="<?php echo $url ?>/js/priority-nav.js"></script>
 <script src="<?php echo $url ?>/js/scripts.js"></script>
 
-<!-- mmenu scripts -->
 
-<!-- <link rel="stylesheet" href="<?php echo $url ?>/js/mmenu.css">
-<script src="<?php echo $url ?>/js/mmenu.polyfills.js"></script>
-<script src="<?php echo $url ?>/js/mmenu.js"></script>  
+<!-- slideshow scripts -->
 
-<script>
-    var catsMenu = document.querySelector("#woocommerce_product_categories-4");
+<?php if (is_front_page()): ?>
+    <link rel="stylesheet" href="<?php echo $url ?>/js/splide/css/splide.min.css">
+    <script src="<?php echo $url ?>/js/splide/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide').mount();
+    </script>
+<?php endif; ?>
 
-    if (catsMenu) {
-        catsMenu.firstChild.remove();
-    }
 
-    var theMenu = new Mmenu(catsMenu.firstElementChild, {
-        "extensions": [
-            // "pagedim-black",
-            "theme-dark"
-        ],
-        "counters": true
-    });
-
-    /* Button Trigger */
-    $("#my-button").click(function() {
-        theMenu.open();
-      });
-    
-</script>
--->
 
 <?php wp_footer(); ?>
 
