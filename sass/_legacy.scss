@@ -82,6 +82,13 @@ body,
     }
 }
 
+#post230 .col-full {
+    @include media($tablet) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .home .entry-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -89,7 +96,7 @@ body,
 
 .page-template-template-homepage .entry-content,
 .page-template-template-homepage .entry-header {
-    max-width: 1500px;
+    max-width: none;
     margin: 0 auto;
 }
 
