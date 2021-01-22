@@ -15,33 +15,31 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #content -->
 
  
-
 <!-- if(is_product() || is_front_page() || is_archive()):  -->
 <?php if (is_product()): ?>
-<span class="trust-title">Safe Shopping, Secure Payments</span>
 <div class="trust-badges">
     <div class="trust-badge">
-        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="ship"> </div>
+        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ship.svg" alt="30-Days No-Questions Return Policy"> </div>
         <div>
             <p> <strong>30-Days No-Questions Return Policy</strong><br /> If you are not completely satisfied with your
                 purchase, you can claim a 100% refund. Only shipping and delivery costs will be retained. </p>
         </div>
     </div>
     <div class="trust-badge">
-        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-return.svg" alt="return"> </div>
+        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-return.svg" alt="Easy Exchange Policy"> </div>
         <div>
             <p> <strong>Easy Exchange Policy</strong><br /> We welcome exchanges, if you prefer an exchange,
                 please feel free to choose another color, size or item from our offerings. </p>
         </div>
     </div>
     <div class="trust-badge">
-        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl"> </div>
+        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="Safe Shopping, Secure Payments"> </div>
         <div>
-            <p> <strong>Secure Checkout</strong> <br />SSL Enabled Secure Checkout. You can shop safe and secure with us. </p>
+            <p> <strong>Safe Shopping, Secure Payments</strong> <br />SSL Enabled Secure Checkout. You can shop safe and secure with us. </p>
         </div>
     </div>
     <div class="trust-badge">
-        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-ssl.svg" alt="ssl"> </div>
+        <div class="badge-image"> <img src="<?php echo $url ?>/images/icon-family.svg" alt="Family Owned & Opperated"> </div>
         <div>
             <p> <strong>Family Owned & Opperated</strong> <br />Silver Fever is a family owned and opperated business from San Diego, California </p>
         </div>
