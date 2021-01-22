@@ -61,7 +61,7 @@ $url = get_stylesheet_directory_uri();
 <div class="order-questions"> 
     <p>
        Questions about your order? Contact Liliya <br> 
-       Text or Call <a href="tel+1(858) 922-7535">(858) 922-7535 </a>
+       Text or Call <a href="tel+1(858)9227535">(858) 922-7535 </a>
        email <a href="mailto:info@silverfever.com">info@silverfever.com</a>
        <br />
     </p>

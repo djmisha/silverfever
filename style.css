@@ -228,7 +228,7 @@ input#woocommerce-product-search-field-1 {
 
 @media only screen and (min-width: 768px) {
   .page-template-template-homepage .page .entry-content {
-    padding-top: 60px;
+    padding-top: 10px;
   }
 }
 
@@ -263,13 +263,6 @@ input#woocommerce-product-search-field-1 {
 .home .entry-content div img {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
-}
-
-@media screen and (max-width: 768px) {
-  .home .entry-content div img {
-    margin-bottom: 50px;
-  }
 }
 
 /* Product Category Pages */
