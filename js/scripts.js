@@ -86,12 +86,25 @@ function calcSavings() {
 
 /* attachTextToRegisterCTA  */
 
-function attachTextToRegisterCTA() {
-    var theTextToAttach = document.querySelector(".discount-text");
-    if (theTextToAttach) {
-        var attachElement = document.querySelector(
-            ".woocommerce-notices-wrapper .u-column2.col-2 h2"
-        );
-        attachElement.appendChild(theTextToAttach);
+// function attachTextToRegisterCTA() {
+//     var theTextToAttach = document.querySelector(".discount-text");
+//     if (theTextToAttach) {
+//         var attachElement = document.querySelector(
+//             ".woocommerce-notices-wrapper .u-column2.col-2 h2"
+//         );
+//         attachElement.appendChild(theTextToAttach);
+//     }
+// }
+
+
+function attachCategoriesHigheronPage() {
+    var isHome = document.querySelector('.home');
+    if (isHome) {
+        var catSection = document.querySelector('section.storefront-product-section.storefront-product-categories');
+        var attachElement = document.querySelector('.home-cats-holder');
+        catSection.firstChild.innerHTML = "Our Collections";
+        attachElement.appendChild(catSection);
     }
 }
+
+attachCategoriesHigheronPage();
