@@ -35,6 +35,7 @@ function hook_analytics()
 {
     ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<meta name="google-site-verification" content="3lNSCgZgikYCsNdiZjQLuRWH1LvK8_lI_AomdDBIj1k" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5551508-1"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
