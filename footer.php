@@ -116,7 +116,7 @@ $url = get_stylesheet_directory_uri();
     } */
 </style>
 
-<!-- slideshow scripts -->
+<!-- slideshow scripts
 
 <?php if (is_front_page()): ?>
     <link rel="stylesheet" href="<?php echo $url ?>/js/splide/css/splide.min.css">
@@ -130,7 +130,7 @@ $url = get_stylesheet_directory_uri();
         } ).mount();
     </script>
 <?php endif; ?>
-
+ -->
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="<?php echo $url ?>/js/priority-nav.js"></script>
