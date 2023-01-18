@@ -47,13 +47,6 @@ $url = get_stylesheet_directory_uri();
 </div>
 <?php endif; ?>
 
-<?php if (!is_user_logged_in()) { ?>
-<div class="register-for-discount">
-    <?php echo do_shortcode('[woocommerce_my_account]'); ?>
-    <p class="discount-text">Discount coupon code will be send to your email address.</p>
-</div>
-<?php } ?>
-
 <?php do_action('storefront_before_footer'); ?>
 
 <div class="order-questions"> 
@@ -64,9 +57,6 @@ $url = get_stylesheet_directory_uri();
        <br />
     </p>
 </div>
-
-
-
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="col-full">
