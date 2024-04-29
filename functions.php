@@ -28,6 +28,7 @@ function child_theme_enqueue_styles()
 
 add_action('wp_enqueue_scripts', 'child_theme_enqueue_styles');
 
+wp_enqueue_script( 'jquery' );
 
 /* Google Analytics */
 

@@ -132,7 +132,9 @@ $url = get_stylesheet_directory_uri();
 <?php endif; ?>
  -->
 
+<!--
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+-->
 <script src="<?php echo $url ?>/js/priority-nav.js"></script>
 <script src="<?php echo $url ?>/js/scripts.js"></script>
 
