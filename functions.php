@@ -30,59 +30,6 @@ add_action('wp_enqueue_scripts', 'child_theme_enqueue_styles');
 
 wp_enqueue_script( 'jquery' );
 
-/* Google Analytics */
-
-function hook_analytics()
-{
-    ?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<meta name="google-site-verification" content="3lNSCgZgikYCsNdiZjQLuRWH1LvK8_lI_AomdDBIj1k" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5551508-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-5551508-1');
-</script>
-<?php
-}
-
-add_action('wp_head', 'hook_analytics');
-
-
-
-/* Product Pages Infinite Scroll */
-
-function hook_infinite_scroll()
-{
-    ?>
-
-<!-- <script async src="https://silverfever.com/wordpress/wp-content/themes/storefront-child-theme/scripts/infinite-scroll.pkgd.min.js"></script> -->
-
-<script>
-//  (function($) {
-//        $(function() {//
-
-//          $('.archive .products').infiniteScroll({
-//            path: '.next',
-//            append: '.products',
-//            history: false,
-//          });//
-
-//        }); 
-//      })(jQuery);
-</script>
-
-<?php
-}
-
-add_action('wp_footer', 'hook_infinite_scroll');
-
-
 
 /*==========================================================
 =            Disable the WordPress Core Emoji's            =
